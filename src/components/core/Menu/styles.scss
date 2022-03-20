@@ -1,0 +1,74 @@
+@import '../../../scss/variables';
+@import '../../../scss/utils';
+
+// @file
+// Menu
+
+.c-menu {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.c-menu__menu {
+  @include list-inline();
+
+  margin: 0;
+}
+
+.c-menu__item {
+  margin: 0;
+}
+
+.c-menu__link {
+  font-size: $font-size-sm;
+  color: $grey;
+  font-weight: 700;
+  margin: 0 $spacing-3;
+  padding: 0 0 $spacing-1;
+  position: relative;
+  transition: color 0.4s ease-in;
+  text-decoration: none;
+
+  &::before,
+  &::after {
+    background-color: $blue;
+    content: '';
+    display: block;
+    height: 3px;
+    top: 100%;
+    position: absolute;
+    transition: width 0.4s ease-in;
+    width: 0;
+  }
+
+  &::before {
+    right: 50%;
+  }
+
+  &::after {
+    left: 50%;
+  }
+
+  &.is-active {
+    color: $black;
+
+    &:hover {
+      color: $black;
+
+      &::before,
+      &::after {
+        width: 50%;
+      }
+    }
+  }
+
+  &:hover {
+    color: $black;
+
+    &::before,
+    &::after {
+      width: 50%;
+    }
+  }
+}

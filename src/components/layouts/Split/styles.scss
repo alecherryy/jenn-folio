@@ -1,0 +1,46 @@
+@import '../../../scss/variables';
+@import '../../../scss/utils';
+
+// @file
+// Split
+
+.l-split {
+  min-height: 100vh;
+  padding: 0;
+
+  @include bp-desktop {
+    padding: $spacing-9 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+  }
+}
+
+.l-split__left,
+.l-split__right {
+  flex: 1;
+  height: 100%;
+
+  .p-home &,
+  .p-blog & {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.l-split__left {
+  padding-right: $spacing-3;
+
+  .p-home & {
+    @include bp-max-desktop {
+      display: none !important;
+    }
+  }
+}
+
+.l-split__right {
+  padding-left: $spacing-3;
+}
