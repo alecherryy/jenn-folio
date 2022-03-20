@@ -5,16 +5,22 @@
 // Split
 
 .l-split {
+  align-items: center;
+  display: flex;
   min-height: 100vh;
   padding: $spacing-6 $spacing-3;
+  width: 100%;
+
+  @include bp-tablet {
+    flex-direction: column;
+    justify-content: center;
+  }
 
   @include bp-desktop {
-    align-items: center;
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     height: 100vh;
     padding: $spacing-6;
-    width: 100%;
   }
 
   @include bp-desktop-lg {
@@ -30,13 +36,5 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-  }
-
-  @include bp-desktop {
-    padding: 0 $spacing-3;
-  }
-
-  @include bp-desktop-lg {
-    padding: 0 $spacing-6;
   }
 }

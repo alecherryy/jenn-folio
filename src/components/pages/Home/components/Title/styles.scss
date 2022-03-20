@@ -6,13 +6,10 @@
 
 .c-title {
   color: $grey;
-
-  @include bp-desktop {
-    margin-left: $spacing-3;
-  }
+  margin-bottom: $spacing-6;
 
   @include bp-desktop-lg {
-    margin-left: $spacing-9;
+    margin-bottom: $spacing-9;
   }
 }
 

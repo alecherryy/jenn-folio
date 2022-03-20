@@ -1,7 +1,6 @@
 import { Headshot } from "../../core/Headshot/Headshot"
 import { Split } from "../../layouts/Split/Split"
-import { FeaturedWork } from "./components/FeaturedWork/FeaturedWork"
-import { Title } from "./components/Title/Title"
+import { Content } from "./components/Content/Content"
 
 /**
  * Home page
@@ -12,10 +11,7 @@ export const Home = () => {
     <div className="p-home">
       <Split>
         <Headshot />
-        <div className="p-home__inner">
-          <Title />
-          <FeaturedWork />
-        </div>
+        <Content />
       </Split>
     </div>
   )
