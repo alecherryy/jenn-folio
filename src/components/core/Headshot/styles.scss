@@ -1,0 +1,27 @@
+@import 'scss/variables';
+@import 'scss/utils';
+
+// @file
+// Headshot
+
+.c-headshot {
+  display: inline-block;
+  box-shadow: 0 0 20px #ccc;
+  margin: $spacing-6 0 0 0;
+
+  @include bp-desktop {
+    margin: 0 $spacing-6 0 0;
+  }
+
+  @include bp-desktop-lg {
+    margin: 0 $spacing-9 0 0;
+  }
+}
+
+.c-headshot__image {
+  display: block;
+
+  @include bp-tablet {
+    max-width: rem(400px);
+  }
+}

@@ -1,4 +1,16 @@
 /**
+ * Helper function to join multiple classes names and return them
+ * as a signle string.
+ *
+ * @param className default class name
+ * @param modifierClasses modifier class for additional styles
+ * @returns a string
+ */
+export const mergeClassNames = (className: string, modifierClasses: string) => {
+  return [className, modifierClasses].join(' ').trim();
+};
+
+/**
  * Check screen size and return a boolean.
  *
  * @name isDesktopScreenWidth

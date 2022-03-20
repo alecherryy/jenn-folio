@@ -5,17 +5,13 @@ import './styles.scss';
  * Split layout
  */
 type Props = {
-  left: ReactNode,
-  right: ReactNode,
+  children: ReactNode,
 }
-export const Split = ({ left, right}: Props) => {
+export const Split = ({ children }: Props) => {
   return (
     <div className="l-split">
-      <div className="l-split__left">
-        {left}
-      </div>
-      <div className="l-split__right">
-        {right}
+      <div className="l-split__inner">
+        {children}
       </div>
     </div>
   )

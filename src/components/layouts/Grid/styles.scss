@@ -1,0 +1,60 @@
+@import 'scss/utils';
+@import 'scss/variables';
+
+// @file
+// Grid
+
+.l-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: $spacing-3;
+}
+
+.l-grid--2-col {
+  @include bp-tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.l-grid--3-col {
+  @include bp-tablet {
+    gap: $spacing-3;
+  }
+
+  @include bp-desktop-lg {
+    grid-template-columns: repeat(3, 1fr);
+    gap: $spacing-6;
+  }
+}
+
+.l-grid--4-col {
+  @include bp-tablet {
+    grid-template-columns: repeat(2, 1fr);
+    gap: $spacing-3;
+  }
+
+  @include bp-tablet-lg {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include bp-desktop-lg {
+    grid-template-columns: repeat(4, 1fr);
+    gap: $spacing-6;
+  }
+}
+
+.l-grid--6-col {
+  @include bp-tablet {
+    grid-template-columns: repeat(2, 1fr);
+    gap: $spacing-3;
+  }
+
+  @include bp-tablet-lg {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include bp-desktop-lg {
+    grid-template-columns: repeat(6, 1fr);
+    gap: $spacing-6;
+  }
+}

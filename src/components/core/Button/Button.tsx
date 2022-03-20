@@ -10,11 +10,13 @@ type Props = RequiredProps & {
   text: string,
   modifierClasses?: string
 }
-export const Button = ({ modifierClasses = '', text, ...rest}: Props) => {
+export const Button = ({ modifierClasses = '', text, ...rest }: Props) => {
   return (
-    <button {...rest} className={[
-      'c-button',
-      modifierClasses
-    ].join(' ').trim()}>{text}</button>
+    <button {...rest}
+      className={[
+        'c-button',
+        modifierClasses
+      ].join(' ').trim()}
+    >{text}</button>
   )
 }
