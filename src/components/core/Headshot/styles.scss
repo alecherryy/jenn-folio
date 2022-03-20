@@ -6,7 +6,7 @@
 
 .c-headshot {
   display: inline-block;
-  box-shadow: 0 0 20px #ccc;
+  box-shadow: 0 10px 20px #ccc;
   margin: $spacing-6 0 0 0;
 
   @include bp-desktop {

@@ -1,5 +1,5 @@
 {
-  "name": "josie-folio",
+  "name": "jenn-folio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -41,8 +41,6 @@
     ]
   },
   "devDependencies": {
-    "list-react-files": "^0.2.0",
-    "markdown-to-jsx": "^7.1.6",
     "react-awesome-reveal": "^3.8.1",
     "react-reveal": "^1.2.2",
     "react-router-dom": "^6.2.1",
