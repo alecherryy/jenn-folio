@@ -5,42 +5,36 @@
 // Split
 
 .l-split {
+  align-items: center;
+  display: flex;
   min-height: 100vh;
-  padding: 0;
+  padding: $spacing-6 $spacing-3;
+  width: 100%;
 
-  @include bp-desktop {
-    padding: $spacing-9 0;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    height: 100vh;
-    width: 100%;
-  }
-}
-
-.l-split__left,
-.l-split__right {
-  flex: 1;
-  height: 100%;
-
-  .p-home &,
-  .p-blog & {
-    align-items: center;
-    display: flex;
+  @include bp-tablet {
+    flex-direction: column;
     justify-content: center;
   }
-}
 
-.l-split__left {
-  padding-right: $spacing-3;
+  @include bp-desktop {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100vh;
+    padding: $spacing-6;
+  }
 
-  .p-home & {
-    @include bp-max-desktop {
-      display: none !important;
-    }
+  @include bp-desktop-lg {
+    padding: $spacing-9;
   }
 }
 
-.l-split__right {
-  padding-left: $spacing-3;
+.l-split__inner {
+  padding: 0;
+
+  @include bp-tablet-lg {
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
 }

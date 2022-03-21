@@ -13,8 +13,9 @@
 .c-mobile-menu__btn {
   @include button-clear();
 
-  color: $grey;
+  color: $black;
   font-size: $font-size-sm;
+  font-weight: 600;
   position: fixed;
   right: $spacing-2;
   z-index: 4;
@@ -24,7 +25,7 @@
   @include list-clean();
 
   align-items: center;
-  background-color: $black;
+  background-color: $white;
   flex-direction: column;
   justify-content: center;
   height: 100vh;
@@ -42,9 +43,10 @@
 
 .c-mobile-menu__link {
   color: $grey;
+  font-size: 600;
   text-decoration: none;
 
   &.is-active {
-    color: $white;
+    color: $blue;
   }
 }

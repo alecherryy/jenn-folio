@@ -1,0 +1,44 @@
+@import 'scss/variables';
+@import 'scss/utils';
+
+// @file
+// Content
+
+.c-content {
+  margin-top: $spacing-6;
+
+  @include bp-tablet-lg {
+    padding-left: $spacing-3;
+  }
+
+  @include bp-desktop {
+    margin-left: $spacing-3;
+  }
+
+  @include bp-desktop-lg {
+    margin-top: $spacing-9;
+    margin-left: $spacing-9;
+  }
+}
+
+.c-content__title {
+  font-family: $base-font-family;
+  font-weight: 600;
+  text-transform: capitalize;
+
+
+  @include bp-desktop {
+    position: relative;
+
+    &::before {
+      background-color: $blue;
+      display: block;
+      content: '';
+      height: 5px;
+      position: absolute;
+      top: calc((100% - 5px) / 2);
+      left: -90px;
+      width: 70px;
+    }
+  }
+}

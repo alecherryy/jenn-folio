@@ -1,21 +1,22 @@
-import { Link } from "react-router-dom";
-import { Post } from "../../../types";
 import './styles.scss';
+import { useNavigate } from "react-router-dom";
+import { TeaserItem } from "types";
+import { Button } from '../Button/Button';
 
 /**
- * Logo component
+ * Teaser component
  */
-type Props = {
-  post: Post
-}
-export const Teaser = ({ post }: Props) => {
-  const path = post.title.toLowerCase().replaceAll(/[.,/#!$%^&*;:{}=\-_`~()]/g, '').replaceAll(' ', '-');
-  const date = (new Date(post.date)).toLocaleString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+type Props = TeaserItem;
+export const Teaser = ({ ...rest }: Props) => {
+  const navigate = useNavigate();
   return (
     <div className="c-teaser">
-      <h5>{post.title}</h5>
-      <p className="u-txt-xs u-txt-grey-3">{date}</p>
-      <Link className="c-button c-button--text-small" to={`/blog/${path}`}>Read more</Link>
+      <span className="c-teaser__date">{rest.date}</span>
+      <h5 className="c-teaser__title">{rest.title}</h5>
+      {rest.subtitle}
+      <div className="c-teaser__bottom">
+        <Button text="Read more" modifierClasses="c-button--text" onClick={() => navigate(`${rest.path}`)} />
+      </div>
     </div>
   )
 }

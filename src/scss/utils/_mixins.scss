@@ -6,9 +6,7 @@
   color: $grey;
   display: block;
   font-size: $font-size-sm;
-  font-weight: 700;
   margin: 0 0 $spacing-1;
-  text-transform: uppercase;
 }
 
 // Remove button default styles
@@ -103,7 +101,7 @@ $support-for-rtl: true !default;
 
 // SVG Background
 // image location might change, based on project set up
-@mixin svg-background($image-name, $image-location: '/images/') {
+@mixin svg-background($image-name, $image-location: '/assets/images/') {
     $url: $image-location + $image-name + '.svg';
     background-image: url($url);
 }

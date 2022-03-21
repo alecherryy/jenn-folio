@@ -18,12 +18,18 @@
 
 .c-menu__item {
   margin: 0;
+
+  &:last-child {
+    .c-menu__link {
+      margin-right: 0;
+    }
+  }
 }
 
 .c-menu__link {
   font-size: $font-size-sm;
   color: $grey;
-  font-weight: 700;
+  font-weight: 600;
   margin: 0 $spacing-3;
   padding: 0 0 $spacing-1;
   position: relative;
@@ -53,13 +59,13 @@
   &.is-active {
     color: $black;
 
+    &::before,
+    &::after {
+      width: 50%;
+    }
+
     &:hover {
       color: $black;
-
-      &::before,
-      &::after {
-        width: 50%;
-      }
     }
   }
 

@@ -1,6 +1,6 @@
 import { Slide } from "react-awesome-reveal";
 import { NavLink } from "react-router-dom";
-import Image from "../../../images/logo.svg";
+import Image from "../../../assets/images/logo.svg";
 import './styles.scss';
 
 /**

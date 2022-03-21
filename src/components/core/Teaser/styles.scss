@@ -4,4 +4,27 @@
 // @file
 // Teaser
 
-// .c-teaser {}
+.c-teaser {
+  color: $grey;
+  font-size: $font-size-sm;
+}
+
+.c-teaser__date {
+  @include eyebrow();
+
+  margin-bottom: 0;
+}
+
+.c-teaser__title {
+  font-size: $font-size-sm;
+  margin-bottom: $spacing-1;
+}
+
+.c-teaser__bottom {
+  margin-top: $spacing-1;
+  text-align: right;
+
+  @include bp-desktop-lg {
+    margin-top: $spacing-3;
+  }
+}

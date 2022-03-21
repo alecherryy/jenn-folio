@@ -10,7 +10,7 @@
   background-color: $blue;
   color: $white;
   display: inline-block;
-  font-weight: 700;
+  font-weight: 600;
   line-height: $line-height-loose;
   width: rem(300px);
   position: relative;
@@ -42,12 +42,56 @@
 
 .c-button--text {
   background-color: transparent;
-  font-weight: 400;
-  padding: 0;
+  color: $black;
+  font-size: $font-size-sm;
+  font-weight: 600;
+  letter-spacing: 5px;
+  padding: 0 $spacing-3 0 0;
+  position: relative;
+  text-transform: uppercase;
   width: auto;
+
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    transition: all 0.2s ease-in;
+  }
+
+  &::before {
+    display: block;
+    background-color: $grey;
+    bottom: 0;
+    height: 1px;
+    opacity: 0;
+    left: 0;
+    width: calc(100% - #{$spacing-3});
+  }
+
+  &::after {
+    @include svg-background(icon-arrow-right);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px 16px;
+    height: 15px;
+    right: 0;
+    top: calc((100% - 16px) / 2);
+    width: 20px;
+  }
 
   &:hover {
     background-color: transparent;
+    color: $black;
+
+    &::before {
+      opacity: 1;
+    }
+
+    &::after {
+      transform: translate(50%);
+    }
   }
 }
 

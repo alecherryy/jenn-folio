@@ -42,7 +42,7 @@ body {
 %hN {
   font-family: $header-font-family;
   font-weight: 700;
-  color: $white;
+  color: $black;
   hyphens: none;
   line-height: $line-height-normal;
   margin: 0 0 $spacing-1;
@@ -167,7 +167,7 @@ mark {
 label {
   color: $grey;
   font-size: $font-size-sm;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 input,

@@ -1,0 +1,21 @@
+@import 'scss/variables';
+@import 'scss/utils';
+
+// @file
+// Title
+
+.c-title {
+  color: $grey;
+  margin-bottom: $spacing-6;
+
+  @include bp-desktop-lg {
+    margin-bottom: $spacing-9;
+  }
+}
+
+.c-title__title {
+  font-family: $base-font-family;
+  font-weight: 600;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
