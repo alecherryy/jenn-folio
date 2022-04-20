@@ -4,7 +4,7 @@
 html {
   box-sizing: border-box;
   font-size: $base-font-size;
-  line-height: $line-height-normal;
+  line-height: $line-height-loose;
   min-height: 100%;
   text-size-adjust: 100%;
 }
@@ -12,17 +12,13 @@ html {
 // adjust font size based on resolution
 @media (max-resolution: 180dpi) {
   html {
-    font-size: calc(
-      10px * 0.9 + (18 * 0.9 - 10 * 0.9) * ((100vmin - 130px) / (1600 - 130))
-    );
+    font-size: calc(10px * 0.9 + (18 * 0.9 - 10 * 0.9) * ((100vmin - 130px) / (1600 - 130)));
   }
 }
 
 @media (resolution: 96dpi) {
   html {
-    font-size: calc(
-      12px * 0.8 + (18 * 0.8 - 12 * 0.8) * ((100vmin - 130px) / (1600 - 130))
-    );
+    font-size: calc(12px * 0.8 + (18 * 0.8 - 12 * 0.8) * ((100vmin - 130px) / (1600 - 130)));
   }
 }
 
@@ -107,7 +103,7 @@ h5,
   font-size: $font-size-h6;
 
   @include bp-tablet-lg {
-      font-size: $font-size-h5;
+    font-size: $font-size-h5;
   }
 }
 
@@ -130,7 +126,7 @@ p {
 }
 
 hr {
-    border: solid 1px $grey;
+  border: solid 1px $grey;
 }
 
 a {
@@ -201,12 +197,12 @@ textarea {
 
   &[type='checkbox'],
   &[type='radio'] {
-    ~ svg {
+    ~svg {
       background-color: transparent !important;
       color: $grey;
     }
 
-    &:checked ~ svg {
+    &:checked~svg {
       color: $grey;
     }
   }
