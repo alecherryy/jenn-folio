@@ -35,7 +35,7 @@
     padding-right: $spacing-3;
   }
 
-  & + .c-button {
+  &+.c-button {
     margin-left: $spacing-2;
   }
 }
@@ -78,6 +78,7 @@
     height: 15px;
     right: 0;
     top: calc((100% - 16px) / 2);
+    transform: rotate(-45deg);
     width: 20px;
   }
 
