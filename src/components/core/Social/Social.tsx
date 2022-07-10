@@ -8,7 +8,7 @@ import './styles.scss';
 const ITEMS: Link[] = [
   {
     text: 'twitter',
-    path: 'https://github.com/Stsumej'
+    path: 'https://twitter.com/stsumej'
   },
   {
     text: 'github',

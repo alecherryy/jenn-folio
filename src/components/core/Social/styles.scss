@@ -7,9 +7,12 @@
 $size: rem(30px);
 
 .c-social {
+  align-items: center;
+  display: flex;
   padding-left: $spacing-3;
 
   @include bp-desktop {
+    display: inline-block;
     bottom: $spacing-3;
     padding-left: 0;
     position: fixed;
@@ -23,10 +26,12 @@ $size: rem(30px);
   display: block;
   font-size: $font-size-sm;
   font-weight: 700;
+  margin-right: $spacing-2;
   white-space: nowrap;
 
   @include bp-desktop {
     margin-bottom: $spacing-2;
+    margin-right: 0;
     transform: rotate(-90deg);
   }
 }

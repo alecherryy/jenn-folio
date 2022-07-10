@@ -7,7 +7,7 @@ import Image from "../../../assets/images/headshot.jpg";
 export const Headshot = () => {
   return (
     <figure className="c-headshot">
-      <img className="c-headshot__image" src={Image} alt="Jenn St Stume headshot" />
+      <img className="c-headshot__image" src={Image} alt="Jé St Stume headshot" />
     </figure>
   )
 }
