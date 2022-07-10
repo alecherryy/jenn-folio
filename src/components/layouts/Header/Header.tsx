@@ -6,9 +6,13 @@ import { Menu } from "../../core/Menu/Menu";
 import { MobileMenu } from "../../core/MobileMenu/MobileMenu";
 const MENU_ITEMS: Link[] = [
   {
-    text: 'Research',
-    path: '/research'
+    text: 'Home',
+    path: '/'
   },
+  // {
+  //   text: 'Research',
+  //   path: '/research'
+  // },
   {
     text: 'Teaching',
     path: '/teaching'

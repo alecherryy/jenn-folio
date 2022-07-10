@@ -12,7 +12,7 @@ export const Content = () => {
   return (
     <div className="c-content">
       <Title />
-      <h6 className="c-content__title">Recent Publications</h6>
+      <h6 className="c-content__title">Recent Publications and Working Papers</h6>
       <Grid numOfCols={3}>
         {FEATURED_WORK.map((item: TeaserItem, index: number) => (
           <Teaser key={index} {...item} />
