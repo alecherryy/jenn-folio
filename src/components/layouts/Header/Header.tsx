@@ -5,18 +5,18 @@ import { Logo } from "../../core/Logo/Logo";
 import { Menu } from "../../core/Menu/Menu";
 import { MobileMenu } from "../../core/MobileMenu/MobileMenu";
 const MENU_ITEMS: Link[] = [
-  {
-    text: 'Research',
-    path: '/research'
-  },
+  // {
+  //   text: 'Research',
+  //   path: '/research'
+  // },
   {
     text: 'Teaching',
     path: '/teaching'
   },
-  {
-    text: 'Resources',
-    path: '/resources'
-  },
+  // {
+  //   text: 'Resources',
+  //   path: '/resources'
+  // },
   {
     text: 'About',
     path: '/about'

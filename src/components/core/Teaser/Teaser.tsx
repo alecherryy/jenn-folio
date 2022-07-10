@@ -14,9 +14,11 @@ export const Teaser = ({ ...rest }: Props) => {
       <span className="c-teaser__date">{rest.date}</span>
       <h5 className="c-teaser__title">{rest.title}</h5>
       {rest.subtitle}
-      <div className="c-teaser__bottom">
-        <Button text="Read" modifierClasses="c-button--text" onClick={() => navigate(`${rest.path}`)} />
-      </div>
+      {rest.path && (
+        <div className="c-teaser__bottom">
+          <Button text="Read" modifierClasses="c-button--text" onClick={() => navigate(`${rest.path}`)} />
+        </div>
+      )}
     </div>
   )
 }
