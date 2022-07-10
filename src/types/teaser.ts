@@ -3,5 +3,5 @@ export type TeaserItem = {
   date: string,
   title: string,
   subtitle?: string,
-  path: string
+  path?: string
 };

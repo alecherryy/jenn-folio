@@ -4,23 +4,71 @@
 // @file
 // Social
 
+$size: rem(30px);
+
 .c-social {
-  @include list-inline();
+  align-items: center;
+  display: flex;
+  padding-left: $spacing-3;
+
+  @include bp-desktop {
+    display: inline-block;
+    bottom: $spacing-3;
+    padding-left: 0;
+    position: fixed;
+    right: rem(32px);
+    width: $size;
+  }
+}
+
+.c-social__label {
+  color: $blue;
+  display: block;
+  font-size: $font-size-sm;
+  font-weight: 700;
+  margin-right: $spacing-2;
+  white-space: nowrap;
+
+  @include bp-desktop {
+    margin-bottom: $spacing-2;
+    margin-right: 0;
+    transform: rotate(-90deg);
+  }
+}
+
+.c-social__list {
+  @include list-clean();
+
+  @include bp-max-desktop {
+    @include list-inline();
+  }
 }
 
 .c-social__item {
-  margin: 0;
-  padding-right: $spacing-3 !important;
+  margin-right: $spacing-2;
+  padding-right: 0 !important;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @include bp-max-desktop {
+    margin-bottom: $spacing-2;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .c-social__link {
-  @include image-replace(rem(25px), rem(25px));
+  @include image-replace($size, $size);
 
   position: relative;
 
   &::before,
   &::after {
-    @include image-replace(rem(25px), rem(25px));
+    @include image-replace($size, $size);
 
     background-position: center;
     background-repeat: no-repeat;
@@ -68,6 +116,16 @@
 
     &::after {
       @include svg-background(icon-social-github-hover);
+    }
+  }
+
+  &.c-social__link--linkedin {
+    &::before {
+      @include svg-background(icon-social-linkedin);
+    }
+
+    &::after {
+      @include svg-background(icon-social-linkedin-hover);
     }
   }
 }

@@ -17,10 +17,10 @@ const MENU_ITEMS: Link[] = [
     text: 'Teaching',
     path: '/teaching'
   },
-  {
-    text: 'Resources',
-    path: '/resources'
-  },
+  // {
+  //   text: 'Resources',
+  //   path: '/resources'
+  // },
   {
     text: 'About',
     path: '/about'
