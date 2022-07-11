@@ -9,10 +9,10 @@ const MENU_ITEMS: Link[] = [
     text: 'Home',
     path: '/'
   },
-  // {
-  //   text: 'Research',
-  //   path: '/research'
-  // },
+  {
+    text: 'Publications',
+    path: '/publications'
+  },
   {
     text: 'Teaching',
     path: '/teaching'
@@ -21,10 +21,10 @@ const MENU_ITEMS: Link[] = [
   //   text: 'Resources',
   //   path: '/resources'
   // },
-  {
-    text: 'About',
-    path: '/about'
-  },
+  // {
+  //   text: 'About',
+  //   path: '/about'
+  // },
 ]
 
 /**

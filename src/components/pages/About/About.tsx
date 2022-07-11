@@ -19,16 +19,11 @@ export const About = () => {
               <Title singleChar="A" title="bout">
                 <p>Jé St Sume is a PhD student in <a href="https://gvpt.umd.edu/landing/Graduate" target="_blank" rel="noreferrer">Government and Politics</a> at
                   the University of Maryland, College Park focusing on race and American politics.</p>
-                <a className="u-mt-6 c-button c-button--text p-about__btn u-hidden-mobile" href="../../../../../assets/files/St-Sume-CV.docx" download>Download Resume</a>
+                <a className="u-mt-6 c-button c-button--text p-about__btn u-hidden-mobile" href="../../../../../assets/files/St-Sume-CV.docx" download>Download CV</a>
               </Title>
-              <p className="p-about__text">Specifically, her work examines the role of grievances in Black American political behavior. Her other
-                work includes research on the political attitudes of non-religious people of color
-                in a "secularizing" world. She received her B.A. in Communication from Florida Atlantic University in Boca Raton, FL
-                where she graduated a Presidential Scholar. She also received an M.A. in Communication from Wake Forest
-                University where she specialized in race and presidential rhetoric. <br /><br />
-                A daughter of Haitian immigrants and south Florida native, she enjoys karaoke by the beach, <b><i>Publix chicken tender subs</i></b>, and cool craft beers. <br /><br />
-                Contact me via email at stsumej [at] umd dot edu.<br />
-                <a className="u-mt-6 c-button c-button--text p-about__btn u-hidden-desktop" href="../../../../../assets/files/St-Sume-CV.docx" download>Download Resume</a>
+              <p className="p-about__text">Specifically, their work examines the role of grievances in Black American political behavior. Their other work includes research on the political attitudes of non-religious people of color in a "secularizing" world. Their received her B.A.
+                in Communication from Florida Atlantic University in Boca Raton, FL where they graduated a Presidential Scholar. They also received an M.A. in Communication from Wake Forest University where they specialized in race and political communication. Their work can be found at Advances in Political Psychology. A child of Haitian immigrants and south Florida native, she enjoys karaoke by the beach, Publix chicken tender subs, and cool craft beers.<br /><br />
+                <a className="u-mt-6 c-button c-button--text p-about__btn u-hidden-desktop" href="../../../../../assets/files/St-Sume-CV.docx" download>Download CV</a>
               </p>
             </div>
           </Content>

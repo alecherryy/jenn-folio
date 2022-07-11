@@ -32,9 +32,23 @@
   padding: 0;
 
   @include bp-tablet-lg {
-    align-items: flex-end;
+    align-items: flex-start;
     display: flex;
     justify-content: space-between;
     width: 100%;
+  }
+
+  @include bp-desktop-lg {
+    .p-home & {
+      align-items: center;
+    }
+  }
+
+  .p-home & {
+    @include bp-max-tablet-lg {
+      max-width: rem(600px);
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
