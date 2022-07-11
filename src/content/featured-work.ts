@@ -5,7 +5,7 @@ export const FEATURED_WORK: TeaserItem[] = [
     date: 'Political Psychology 2022',
     title: 'The Role of Race in Political Attitudes among the Non-Religious',
     subtitle: 'with Janelle Wong',
-    path: '/src/assets/files/Political Psychology - 2022 - St Sume - The Role of Race in Political Attitudes Among the Religiously Unaffiliated.pdf',
+    path: './files/Political Psychology - 2022 - St Sume - The Role of Race in Political Attitudes Among the Religiously Unaffiliated.pdf',
     download: true
   },
   {

@@ -34,7 +34,7 @@ export const Home = () => {
                   <span className="u-txt-italic">
                     University of Maryland, College Park, MD
                   </span><br />
-                  <a className="u-mt-6 u-button u-button--text p-home__btn u-hidden-desktop-down" href="../../../../../assets/files/St-Sume-CV.docx" download>Download CV</a>
+                  <a className="u-mt-6 u-button u-button--text p-home__btn u-hidden-desktop-down" href="./files/St-Sume-CV.docx" download>Download CV</a>
                 </p>
               </Title>
               <p className="p-home__text">
@@ -42,7 +42,7 @@ export const Home = () => {
                 the University of Maryland, College Park focusing on race and American politics.<br /> <br />
                 Specifically, their work examines the role of grievances in Black American political behavior. Their other work includes research on the political attitudes of non-religious people of color in a "secularizing" world. Their received her B.A. in Communication from Florida Atlantic University in Boca Raton, FL where they graduated a Presidential Scholar. They also received an M.A. in Communication from Wake Forest University where they specialized in race and political communication. Their work can be found at Advances in Political Psychology. A child of Haitian immigrants and south Florida native, she enjoys karaoke by the beach, Publix chicken tender subs, and cool craft beers.<br /><br />
                 Contact me via email at stsumej [at] umd dot edu.
-                <a className="u-button u-button--text p-home__btn u-hidden-desktop-up" href="../../../../../assets/files/St-Sume-CV.docx" download>Download CV</a>
+                <a className="u-button u-button--text p-home__btn u-hidden-desktop-up" href="./files/St-Sume-CV.docx" download>Download CV</a>
               </p>
             </div>
           </Content>
