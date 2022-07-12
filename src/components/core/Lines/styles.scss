@@ -52,6 +52,12 @@
     right: calc(#{rem(15px)} + 60px);
   }
 
+  @include bp-max-desktop {
+    &:nth-child(2) {
+      display: none;
+    }
+  }
+
   @include bp-desktop {
     &:first-child {
       left: calc(#{$spacing-6} + 60px);
