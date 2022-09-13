@@ -5,8 +5,9 @@
 @mixin eyebrow() {
   color: $grey;
   display: block;
-  font-size: $font-size-sm;
+  font-size: $font-size-xs;
   margin: 0 0 $spacing-1;
+  text-transform: uppercase;
 }
 
 // Remove button default styles
@@ -30,102 +31,107 @@
 
 // LISTS MIXINS
 // Remove list default styles
-@mixin list-clean {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+@mixin list {
+  padding-left: 0;
+}
 
-    li {
-        padding-left: 0;
-    }
+@mixin list-clean {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    padding-left: 0;
+  }
 }
 
 // Display list items inline
 @mixin list-inline {
-    list-style-type: none;
-    margin-left: 0;
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+
+  li {
     padding-left: 0;
+  }
 
-    li {
-        padding-left: 0;
-    }
-
-    > li {
-        display: inline-block;
-    }
+  >li {
+    display: inline-block;
+  }
 }
 
 // Display inline list and separate items with vertical line
 $support-for-rtl: true !default;
+
 @mixin list-pipeline($pipeline-border-color) {
-    @include clearfix;
-    list-style-type: none;
-    margin-left: 0;
+  @include clearfix;
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+
+  >li {
+    border-right: 1px solid $pipeline-border-color; // LTR
+    display: block;
+    float: left; // LTR
+    margin-right: 0.75rem; // LTR
     padding-left: 0;
+    padding-right: 0.75rem; // LTR
 
-    > li {
-        border-right: 1px solid $pipeline-border-color; // LTR
-        display: block;
-        float: left; // LTR
-        margin-right: 0.75rem; // LTR
-        padding-left: 0;
-        padding-right: 0.75rem; // LTR
-
-        @if $support-for-rtl {
-            [dir='rtl'] & {
-                border-left: 1px solid $pipeline-border-color;
-                border-right: 0;
-                float: right;
-                margin-left: 0.75rem;
-                margin-right: 0;
-                padding-left: 0.75rem;
-                padding-right: 0;
-            }
-        }
-
-        &:last-child {
-        border-right: 0; // LTR
-        margin-right: 0; // LTR
-        padding-right: 0; // LTR
-
-        @if $support-for-rtl {
-            [dir='rtl'] & {
-            border-left: 0;
-            margin-left: 0;
-            padding-left: 0;
-            }
-        }
-        }
+    @if $support-for-rtl {
+      [dir='rtl'] & {
+        border-left: 1px solid $pipeline-border-color;
+        border-right: 0;
+        float: right;
+        margin-left: 0.75rem;
+        margin-right: 0;
+        padding-left: 0.75rem;
+        padding-right: 0;
+      }
     }
+
+    &:last-child {
+      border-right: 0; // LTR
+      margin-right: 0; // LTR
+      padding-right: 0; // LTR
+
+      @if $support-for-rtl {
+        [dir='rtl'] & {
+          border-left: 0;
+          margin-left: 0;
+          padding-left: 0;
+        }
+      }
+    }
+  }
 }
 
 // SVG Background
 // image location might change, based on project set up
 @mixin svg-background($image-name, $image-location: '/assets/images/') {
-    $url: $image-location + $image-name + '.svg';
-    background-image: url($url);
+  $url: $image-location + $image-name + '.svg';
+  background-image: url($url);
 }
 
 // Hide text, but keep it accessible
 @mixin image-replace($width, $height) {
-    color: transparent;
-    display: inline-block;
-    font: 0/0 a;
-    height: $height;
-    position: relative;
-    text-shadow: none;
-    width: $width;
+  color: transparent;
+  display: inline-block;
+  font: 0/0 a;
+  height: $height;
+  position: relative;
+  text-shadow: none;
+  width: $width;
 }
 
 // Replace text with background image, text is still accessible
 @mixin image-replace-text($width, $height, $image-name) {
-    @include svg-background($image-name);
+  @include svg-background($image-name);
 
-    color: transparent;
-    display: inline-block;
-    font: 0/0 a;
-    height: $height;
-    position: relative;
-    text-shadow: none;
-    width: $width;
+  color: transparent;
+  display: inline-block;
+  font: 0/0 a;
+  height: $height;
+  position: relative;
+  text-shadow: none;
+  width: $width;
 }

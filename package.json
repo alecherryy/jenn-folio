@@ -48,6 +48,7 @@
   },
   "devDependencies": {
     "gh-pages": "^4.0.0",
+    "html-react-parser": "^3.0.4",
     "list-react-files": "^0.2.0",
     "node-sass": "^7.0.1",
     "react-awesome-reveal": "^3.8.1",

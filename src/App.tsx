@@ -1,9 +1,7 @@
-import { BrowserRouter } from 'react-router-dom';
 import './App.scss';
-import { Header } from './components/layouts/Header/Header';
-import { RouteSwitch } from './components/core/RouteSwitch/RouteSwitch';
-import { Lines } from 'components/core/Lines/Lines';
-import { Social } from 'components/core/Social/Social';
+import { BrowserRouter } from 'react-router-dom';
+import { Header } from 'components/layouts';
+import { Lines, RouteSwitch, Social } from 'components/core';
 
 function App() {
   return (

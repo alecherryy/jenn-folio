@@ -1,7 +1,7 @@
 import './styles.scss';
 import { Fade } from "react-awesome-reveal"
 import { HOME } from 'wording';
-import { Advisors, Content, Headshot, PapersGrid, Title } from 'components/core';
+import { Content, Headshot, PapersGrid, Title } from 'components/core';
 import { Split } from 'components/layouts';
 
 /**
@@ -17,19 +17,18 @@ export const Home = () => {
         </Fade>
         <Fade duration={1000} direction="right">
           <Content>
-            <div className="p-home__inner">
+            <div className="p-home__inner u-mb-9">
               <Title singleChar="J" title="é St Sume">
-                <p className="u-txt-sm">{HOME.role}, <span className="u-txt-italic">
+                <p>{HOME.role}, <span className="u-txt-italic">
                   {HOME.college}
                 </span>
                 </p>
-                <p className="u-txt-black u-mt-6">
+                <p className="u-txt-black">
                   {HOME.intro}
                 </p>
-                <Advisors />
               </Title>
             </div>
-            <PapersGrid cols={3} title={HOME.publications} content={HOME.publicationsList} />
+            <PapersGrid decorated cols={3} title={HOME.publications} content={HOME.publicationsList} />
           </Content>
         </Fade>
       </Split>

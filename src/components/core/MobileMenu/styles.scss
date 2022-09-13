@@ -18,6 +18,15 @@
   position: fixed;
   right: $spacing-2;
   z-index: 4;
+
+  &.c-button--text {
+    padding: 0;
+
+    &::before,
+    &::after {
+      display: none
+    }
+  }
 }
 
 .c-mobile-menu__menu {
@@ -32,7 +41,7 @@
   position: fixed;
   top: 0;
   width: 100vw;
-  z-index: 2;
+  z-index: -1;
 }
 
 .c-mobile-menu__item {

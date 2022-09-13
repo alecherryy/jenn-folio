@@ -1,12 +1,8 @@
 import './styles.scss';
-import { Content } from "components/core/Content/Content"
-import { Teaser } from "components/core/Teaser/Teaser"
-import { Title } from "components/core/Title/Title"
-import { Grid } from "components/layouts/Grid/Grid"
 import { Fade } from "react-awesome-reveal"
-import { TeaserItem } from "types"
 import { Split } from "../../layouts/Split/Split"
-import { ALL_PUBLICATIONS } from 'wording/all-publications';
+import { PUBLICATIONS } from 'wording';
+import { Content, PapersGrid, Title } from 'components/core';
 
 /**
  * Publications page
@@ -20,11 +16,8 @@ export const Publications = () => {
         <Fade duration={1000} direction="right">
           <Content>
             <Title singleChar="P" title="ublications" />
-            <Grid numOfCols={3}>
-              {ALL_PUBLICATIONS.map((item: TeaserItem, index: number) => (
-                <Teaser key={index} {...item} />
-              ))}
-            </Grid>
+            <PapersGrid title={PUBLICATIONS.journals} cols={3} content={PUBLICATIONS.publicationsList} />
+            <PapersGrid title={PUBLICATIONS.chapters} cols={3} content={PUBLICATIONS.chaptersList} />
           </Content>
         </Fade>
       </Split>

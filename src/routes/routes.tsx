@@ -1,8 +1,5 @@
-import { About } from "components/pages/About/About";
-import { Publications } from "components/pages/Publications/Publications";
-import { Teaching } from "components/pages/Teaching/Teaching";
-import { Home } from "../components/pages/Home/Home";
-import { Route } from "../types";
+import { About, Home, Publications, Teaching } from "components/pages";
+import { Route } from "types";
 
 export const ROUTES: Route[] = [
   {
