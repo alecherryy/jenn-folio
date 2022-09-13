@@ -21,10 +21,10 @@ const MENU_ITEMS: Link[] = [
   //   text: 'Resources',
   //   path: '/resources'
   // },
-  // {
-  //   text: 'About',
-  //   path: '/about'
-  // },
+  {
+    text: 'About',
+    path: '/about'
+  },
 ]
 
 /**
@@ -45,7 +45,7 @@ export const Header = () => {
   const checkIfMobile = () => {
     const screenSize = window.innerWidth;
 
-    if (screenSize < 640) {
+    if (screenSize < 720) {
       setIsMobile(true);
     } else {
       setIsMobile(false);

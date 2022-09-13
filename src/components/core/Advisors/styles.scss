@@ -1,0 +1,15 @@
+@import '../../../scss/variables';
+@import '../../../scss/utils';
+
+// @file
+// Advisors
+
+.c-advisors {
+  color: $grey;
+  font-size: $font-size-sm;
+}
+
+.c-advisors__label {
+  font-family: $header-font-family;
+  color: $black;
+}

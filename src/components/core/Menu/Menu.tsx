@@ -1,6 +1,7 @@
 import { Slide } from "react-awesome-reveal";
 import { NavLink } from "react-router-dom";
 import { Link } from "../../../types";
+import { DownloadCV } from "../DownloadCV/DownloadCV";
 import './styles.scss';
 
 /**
@@ -32,6 +33,9 @@ export const Menu = ({ modifierClasses = '', items }: Props) => {
               </NavLink>
             </li>
           ))}
+          <li className="c-menu__item u-ml-2">
+            <DownloadCV modifierClasses="c-download-cv--boxed" />
+          </li>
         </ul>
       </nav>
     </Slide>

@@ -4,5 +4,6 @@ export type TeaserItem = {
   title: string,
   subtitle?: string,
   path?: string,
+  newTab?: boolean,
   download?: boolean
 };

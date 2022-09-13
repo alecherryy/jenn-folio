@@ -2,6 +2,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Link } from "../../../types";
 import { fadeIn, fadeOut } from "../../../utils/utils";
+import { DownloadCV } from "../DownloadCV/DownloadCV";
 import './styles.scss';
 
 /**
@@ -52,6 +53,9 @@ export const MobileMenu = ({ modifierClasses = '', items }: Props) => {
             </NavLink>
           </li>
         ))}
+        <li className="c-mobile-menu__item u-mt-6">
+          <DownloadCV modifierClasses="c-download-cv--boxed" isMobile />
+        </li>
       </ul>
     </nav>
   )

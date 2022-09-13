@@ -17,12 +17,14 @@
 
 .c-teaser__title {
   font-size: $font-size-sm;
-  margin-bottom: $spacing-1;
+
+  @include bp-desktop-lg {
+    margin-bottom: $spacing-1;
+  }
 }
 
 .c-teaser__bottom {
   margin-top: $spacing-1;
-  text-align: right;
 
   @include bp-desktop-lg {
     margin-top: $spacing-3;

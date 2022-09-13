@@ -1,0 +1,15 @@
+@import '../../../scss/variables';
+@import '../../../scss/utils';
+
+// @file
+// Committee
+
+.c-committee {
+  color: $grey;
+  font-size: $font-size-sm;
+}
+
+.c-committee__label {
+  font-family: $header-font-family;
+  color: $black;
+}

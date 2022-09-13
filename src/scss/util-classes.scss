@@ -30,6 +30,15 @@
   font-size: $font-size-display;
 }
 
+// text font
+.u-txt-heading {
+  font-family: $header-font-family;
+}
+
+.u-txt-base {
+  font-family: $base-font-family;
+}
+
 // text style
 .u-txt-normal {
   font-style: normal;
@@ -131,23 +140,23 @@ $units: 1,
 
 @each $unit in $units {
   .u-m-#{$unit} {
-    margin: spacing($unit);
+    margin: spacing($unit) !important;
   }
 
   .u-mt-#{$unit} {
-    margin-top: spacing($unit);
+    margin-top: spacing($unit) !important;
   }
 
   .u-mb-#{$unit} {
-    margin-bottom: spacing($unit);
+    margin-bottom: spacing($unit) !important;
   }
 
   .u-ml-#{$unit} {
-    margin-left: spacing($unit);
+    margin-left: spacing($unit) !important;
   }
 
   .u-mr-#{$unit} {
-    margin-right: spacing($unit);
+    margin-right: spacing($unit) !important;
   }
 }
 
@@ -179,23 +188,23 @@ $units: 1,
 // padding
 @each $unit in $units {
   .u-p-#{$unit} {
-    padding: spacing($unit);
+    padding: spacing($unit) !important;
   }
 
   .u-pt-#{$unit} {
-    padding-top: spacing($unit);
+    padding-top: spacing($unit) !important;
   }
 
   .u-pb-#{$unit} {
-    padding-bottom: spacing($unit);
+    padding-bottom: spacing($unit) !important;
   }
 
   .u-pl-#{$unit} {
-    padding-left: spacing($unit);
+    padding-left: spacing($unit) !important;
   }
 
   .u-pr-#{$unit} {
-    padding-right: spacing($unit);
+    padding-right: spacing($unit) !important;
   }
 }
 
