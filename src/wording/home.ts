@@ -1,7 +1,9 @@
-import { TeaserItem } from "types";
-
-export const RECENT_PUBLICATIONS: TeaserItem[] = [
-  {
+export const HOME = {
+  role: `PhD Student`,
+  college: `University of Maryland, College Park, MD`,
+  intro: `Jé St Sume is a PhD student in Government and Politics focusing on race and American politics. Specifically, their work examines the role of grievances in Black American political behavior. Their other work includes research on the political attitudes of non-religious people of color in a "secularizing" world.`,
+  publications: `Recent Publications`,
+  publicationsList: [{
     date: 'Political Psychology 2022',
     title: 'The Role of Race in Political Attitudes among the Non-Religious',
     subtitle: 'with Professor Janelle Wong',
@@ -19,5 +21,5 @@ export const RECENT_PUBLICATIONS: TeaserItem[] = [
     date: 'Working Papers',
     title: 'The Psychology of Grievances',
     // path: '/publications/the-role-of-race-in-political-attitudes'
-  }
-]
+  }]
+}

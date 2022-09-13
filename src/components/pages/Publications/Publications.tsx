@@ -6,7 +6,7 @@ import { Grid } from "components/layouts/Grid/Grid"
 import { Fade } from "react-awesome-reveal"
 import { TeaserItem } from "types"
 import { Split } from "../../layouts/Split/Split"
-import { ALL_PUBLICATIONS } from 'content/all-publications';
+import { ALL_PUBLICATIONS } from 'wording/all-publications';
 
 /**
  * Publications page
