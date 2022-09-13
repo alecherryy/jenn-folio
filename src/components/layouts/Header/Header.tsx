@@ -1,18 +1,20 @@
 import './styles.scss';
 import { useEffect, useState } from "react";
-import { Link } from "../../../types";
-import { Logo } from "../../core/Logo/Logo";
-import { Menu } from "../../core/Menu/Menu";
-import { MobileMenu } from "../../core/MobileMenu/MobileMenu";
+import { Link } from 'types';
+import { Menu, MobileMenu, Logo } from 'components/core';
 const MENU_ITEMS: Link[] = [
   {
     text: 'Home',
     path: '/'
   },
-  // {
-  //   text: 'Research',
-  //   path: '/research'
-  // },
+  {
+    text: 'About',
+    path: '/about'
+  },
+  {
+    text: 'Publications',
+    path: '/publications'
+  },
   {
     text: 'Teaching',
     path: '/teaching'
@@ -21,10 +23,6 @@ const MENU_ITEMS: Link[] = [
   //   text: 'Resources',
   //   path: '/resources'
   // },
-  {
-    text: 'About',
-    path: '/about'
-  },
 ]
 
 /**
@@ -45,7 +43,7 @@ export const Header = () => {
   const checkIfMobile = () => {
     const screenSize = window.innerWidth;
 
-    if (screenSize < 640) {
+    if (screenSize < 720) {
       setIsMobile(true);
     } else {
       setIsMobile(false);

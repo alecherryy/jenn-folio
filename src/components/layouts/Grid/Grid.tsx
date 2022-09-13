@@ -7,7 +7,7 @@ import { mergeClassNames } from 'utils/utils';
  * Grid layout
  */
 type Props = {
-  numOfCols: number;
+  numOfCols: 1 | 2 | 3 | 4 | 6;
   children: ReactNode;
 }
 

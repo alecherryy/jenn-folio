@@ -1,4 +1,5 @@
 {
+  "homepage": "https://xn--jstsume-bya.com",
   "name": "jenn-folio",
   "version": "0.1.0",
   "engines": {
@@ -23,7 +24,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -44,6 +47,8 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
+    "html-react-parser": "^3.0.4",
     "list-react-files": "^0.2.0",
     "node-sass": "^7.0.1",
     "react-awesome-reveal": "^3.8.1",

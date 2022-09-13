@@ -1,0 +1,30 @@
+@import '../../../scss/variables';
+@import '../../../scss/utils';
+
+// @file
+// Download CV
+
+.c-download-cv {
+  &.u-button {
+    text-decoration: none;
+
+    &::after {
+      transform: rotate(45deg);
+    }
+  }
+
+  &.c-download-cv--boxed {
+    border: solid 1px $black;
+    padding: $spacing-1 $spacing-3;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+
+    &:hover,
+    &:focus {
+      border-color: $blue;
+    }
+  }
+}

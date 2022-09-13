@@ -1,4 +1,4 @@
-import { PathRouteProps } from "react-router"
+import { PathRouteProps } from "react-router-dom"
 
 // interface for React routes
 type RouteProps = PathRouteProps;

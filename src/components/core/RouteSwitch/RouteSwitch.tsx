@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router";
+import { Route, Routes } from "react-router-dom";
 import { Route as RouteType } from "../../../types";
 import { ROUTES } from "../../../routes";
 

@@ -1,6 +1,7 @@
 import { Slide } from "react-awesome-reveal";
 import { NavLink } from "react-router-dom";
-import { Link } from "../../../types";
+import { Link } from "types";
+import { DownloadCV } from "../DownloadCV";
 import './styles.scss';
 
 /**
@@ -11,7 +12,7 @@ type Props = {
   items: Link[],
 }
 export const Menu = ({ modifierClasses = '', items }: Props) => {
-  const getActiveClass = (navData: any, index: number) => {
+  const getActiveClass = (navData: any) => {
     return navData.isActive ? 'c-menu__link is-active' : 'c-menu__link';
   }
 
@@ -22,16 +23,19 @@ export const Menu = ({ modifierClasses = '', items }: Props) => {
         modifierClasses
       ].join(' ').trim()}>
         <ul className="c-menu__menu">
-          {items.map((item: Link, index: number) => (
-            <li className="c-menu__item" key={index}>
+          {items.map((item: Link) => (
+            <li className="c-menu__item" key={item.text}>
               <NavLink
-                className={(navData: any) => getActiveClass(navData, index)}
+                className={(navData: any) => getActiveClass(navData)}
                 to={item.path}
               >
                 {item.text}
               </NavLink>
             </li>
           ))}
+          <li className="c-menu__item">
+            <DownloadCV modifierClasses="c-download-cv--boxed" />
+          </li>
         </ul>
       </nav>
     </Slide>

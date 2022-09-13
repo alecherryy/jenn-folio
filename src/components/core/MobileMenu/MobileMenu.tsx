@@ -2,10 +2,12 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Link } from "../../../types";
 import { fadeIn, fadeOut } from "../../../utils/utils";
+import { Button } from "../Button";
+import { DownloadCV } from "../DownloadCV/DownloadCV";
 import './styles.scss';
 
 /**
- * Button component
+ * Mobile menu component
  */
 type Props = {
   modifierClasses?: string
@@ -39,7 +41,7 @@ export const MobileMenu = ({ modifierClasses = '', items }: Props) => {
       'c-mobile-menu',
       modifierClasses
     ].join(' ').trim()}>
-      <button onClick={(e: any) => toggleMenuDisplay(e)} className="c-mobile-menu__btn">{open ? 'Close' : 'Menu'}</button>
+      <Button text={open ? 'Close' : 'Menu'} onClick={(e: any) => toggleMenuDisplay(e)} modifierClasses="c-button--text c-mobile-menu__btn" />
       <ul className="c-mobile-menu__menu" style={{ display: 'none', opacity: '0' }}>
         {items.map((item: Link, index: number) => (
           <li className="c-mobile-menu__item" key={index}>
@@ -52,6 +54,9 @@ export const MobileMenu = ({ modifierClasses = '', items }: Props) => {
             </NavLink>
           </li>
         ))}
+        <li className="c-mobile-menu__item u-mt-6">
+          <DownloadCV modifierClasses="c-download-cv--boxed" isMobile />
+        </li>
       </ul>
     </nav>
   )

@@ -5,26 +5,35 @@
 // Teaser
 
 .c-teaser {
-  color: $grey;
   font-size: $font-size-sm;
+  color: $grey;
 }
 
 .c-teaser__date {
   @include eyebrow();
 
+  display: inline-block;
+  padding: 0 3px;
   margin-bottom: 0;
+
+  &.is-published {
+    color: $blue;
+    // color: $white;
+  }
 }
 
 .c-teaser__title {
-  font-size: $font-size-sm;
-  margin-bottom: $spacing-1;
+  font-size: $font-size-md;
+
+  @include bp-desktop-lg {
+    margin-bottom: $spacing-1;
+  }
 }
 
 .c-teaser__bottom {
   margin-top: $spacing-1;
-  text-align: right;
 
   @include bp-desktop-lg {
-    margin-top: $spacing-3;
+    margin-top: $spacing-2;
   }
 }

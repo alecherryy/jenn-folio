@@ -26,5 +26,22 @@
   "include": [
     "src",
     "react-table-config.d.ts"
-  ]
+  ],
+  "paths": {
+    "@layouts/*": [
+      "src/components/layouts/*"
+    ],
+    "@core/*": [
+      "src/components/core/*"
+    ],
+    "@types/*": [
+      "src/types/*"
+    ],
+    "@utils/*": [
+      "src/utils/*"
+    ],
+    "@wording/*": [
+      "src/wording/*"
+    ]
+  }
 }
