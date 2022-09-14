@@ -16,8 +16,8 @@ export const Publications = () => {
         <Fade duration={1000} direction="right">
           <Content>
             <Title singleChar="P" title="ublications" />
-            <PapersGrid title={PUBLICATIONS.journals} cols={3} content={PUBLICATIONS.publicationsList} />
-            <PapersGrid title={PUBLICATIONS.chapters} cols={3} content={PUBLICATIONS.chaptersList} />
+            <PapersGrid decorated title={PUBLICATIONS.journals} cols={3} content={PUBLICATIONS.publicationsList} />
+            {/* <PapersGrid title={PUBLICATIONS.chapters} cols={3} content={PUBLICATIONS.chaptersList} /> */}
           </Content>
         </Fade>
       </Split>

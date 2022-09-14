@@ -27,7 +27,8 @@ export const Committee = () => {
       (
         <>
           <a className="c-committee__person" href={person.website} target="_blank" rel="noreferrer">{person.name}</a>
-          {index === COMMITTEE.length - 1 ? '' : index === COMMITTEE.length - 2 ? ' and ' : ', '}
+          {index === 1 && <span className="u-txt-italic"> (Co-Chairs)</span>}
+          {index === COMMITTEE.length - 1 ? '' : index === 0 ? ' and ' : ', '}
         </>
       )
       )}

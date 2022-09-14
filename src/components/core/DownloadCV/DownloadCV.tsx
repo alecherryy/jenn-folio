@@ -14,6 +14,6 @@ export const DownloadCV = ({ isMobile, modifierClasses = '' }: Props) => {
   ].join(' ').trim();
 
   return (
-    <a className={classes} href="./files/St-Sume-CV.pdf" download>Download CV</a>
+    <a className={classes} href="./files/CV - St Sume, Jennifer.pdf" download>Download CV</a>
   )
 }
