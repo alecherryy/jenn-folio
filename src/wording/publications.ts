@@ -10,12 +10,12 @@ export const PUBLICATIONS = {
     },
     {
       date: 'Working Papers',
-      title: `Understanding African-Americans’ National Attachments through a Racial Lens`,
+      title: `Red, White, and Black: Understanding African Americans' National Attachments`,
       subtitle: 'with Julie Wronski',
     },
     {
       date: 'Working Papers',
-      title: 'African or American?: Linked Fate, Collective Nativism, and Black American National Identity',
+      title: 'Racial Grievances and Black Political Behavior',
     },
     {
       date: 'Working Papers',
