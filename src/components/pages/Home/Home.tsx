@@ -1,8 +1,8 @@
 import './styles.scss';
 import { Fade } from "react-awesome-reveal"
-import { HOME } from 'wording';
 import { Committee, Content, DownloadCV, Headshot, PapersGrid, Title } from 'components/core';
 import { Split } from 'components/layouts';
+import { HOME } from '../../../wording';
 
 /**
  * Home page
