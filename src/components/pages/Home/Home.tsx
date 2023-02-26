@@ -1,7 +1,7 @@
 import './styles.scss';
 import { Fade } from "react-awesome-reveal"
 import { HOME } from 'wording';
-import { Content, DownloadCV, Headshot, PapersGrid, Title } from 'components/core';
+import { Committee, Content, DownloadCV, Headshot, PapersGrid, Title } from 'components/core';
 import { Split } from 'components/layouts';
 
 /**
@@ -26,6 +26,7 @@ export const Home = () => {
                 <p className="u-txt-black">
                   {HOME.intro}
                 </p>
+                <Committee />
                 <DownloadCV />
               </Title>
             </div>
