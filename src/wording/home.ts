@@ -12,11 +12,6 @@ export const HOME = {
   },
   {
     date: 'Working Papers',
-    title: `Red, White, and Black: Understanding African Americans' National Attachments`,
-    subtitle: 'with Julie Wronski',
-  },
-  {
-    date: 'Working Papers',
     title: 'Racial Grievances and Black Political Behavior',
   }]
 }
