@@ -27,7 +27,7 @@ export const Home = () => {
                   {HOME.intro}
                 </p>
                 <Committee />
-                <DownloadCV />
+                <DownloadCV modifierClasses='u-mt-3' />
               </Title>
             </div>
             <PapersGrid decorated cols={3} title={HOME.publications} content={HOME.publicationsList} />
