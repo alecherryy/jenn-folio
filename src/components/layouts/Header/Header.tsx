@@ -1,7 +1,7 @@
 import './styles.scss';
 import { useEffect, useState } from "react";
 import { Link } from 'types';
-import { Menu, MobileMenu, Logo } from 'components/core';
+import { Menu, MobileMenu } from 'components/core';
 const MENU_ITEMS: Link[] = [
   {
     text: 'Home',
@@ -12,7 +12,7 @@ const MENU_ITEMS: Link[] = [
     path: '/about'
   },
   {
-    text: 'Publications',
+    text: 'Research',
     path: '/publications'
   },
   {
@@ -52,7 +52,6 @@ export const Header = () => {
 
   return (
     <header className="l-header">
-      <Logo />
       {isMobile ? (
         <MobileMenu items={MENU_ITEMS} />
       ) : (

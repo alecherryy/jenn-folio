@@ -18,14 +18,18 @@ export const About = () => {
             <div className="p-about__inner">
               <Title singleChar="A" title="bout">
                 <p>{parse(ABOUT.intro)}</p>
-                <p className="u-txt-black">{ABOUT.education}</p>
-                <p className="u-txt-black">{ABOUT.contact}</p>
-                <DownloadCV modifierClasses="u-mt-3" isMobile={false} />
               </Title>
+            </div>
+            <div className="p-about__inner">
               <div className="p-about__text">
+                <p className="u-txt-black">{ABOUT.education}</p>
+              </div>
+              <div className="p-about__text">
+                <p className="u-txt-black">{ABOUT.education_2}</p>
+                <p className="u-txt-black">{ABOUT.contact}</p>
                 <Advisors />
                 <Committee />
-                <DownloadCV modifierClasses="u-mt-3" isMobile />
+                <DownloadCV modifierClasses="u-mt-3" />
               </div>
             </div>
           </Content>

@@ -1,4 +1,4 @@
-import { About, Home, Publications, Teaching } from "components/pages";
+import { About, Home, Research, Teaching } from "components/pages";
 import { Route } from "types";
 
 export const ROUTES: Route[] = [
@@ -9,8 +9,8 @@ export const ROUTES: Route[] = [
   },
   {
     path: '/publications',
-    element: Publications,
-    title: 'Publications'
+    element: Research,
+    title: 'Research'
   },
   {
     path: '/about',

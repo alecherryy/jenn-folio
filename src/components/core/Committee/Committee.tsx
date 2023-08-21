@@ -17,6 +17,10 @@ const COMMITTEE = [
     name: 'Janelle Wong',
     website: 'https://www.aast.umd.edu/bio-janelle-wong',
   },
+  {
+    name: 'Niambi Carter',
+    website: 'https://www.niambicarter.com/',
+  },
 ]
 
 export const Committee = () => {

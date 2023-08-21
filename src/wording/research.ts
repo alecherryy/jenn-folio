@@ -1,4 +1,4 @@
-export const PUBLICATIONS = {
+export const RESEARCH = {
   journals: 'Journal Articles',
   publicationsList: [
     {
@@ -10,14 +10,11 @@ export const PUBLICATIONS = {
     },
     {
       date: 'Working Papers',
-      title: 'Racial Grievances and Black Political Behavior',
+      title: 'Black Racial Grievance and Black American Identity',
     },
     {
-      date: 'December 2019',
-      title: 'The Architect, in Sharing Gratitude: Daily Reflections',
-      subtitle: 'with Mary M. Dalton, Ed',
-      path: 'https://www.amazon.com/Sharing-Gratitude-Reflections-Mary-Dalton/dp/1618460919',
-      download: false,
+      date: 'Working Papers',
+      title: 'Operationalizing Black Racial Grievance for Political Behavior',
     },
   ],
 

@@ -1,8 +1,8 @@
 export const HOME = {
-  role: `PhD Student`,
+  role: `PhD Candidate`,
   college: `University of Maryland, College Park, MD`,
   intro: `Jé St Sume is a PhD student in Government and Politics focusing on race and American politics; specifically, their work examines the role of grievances in Black American political behavior. `,
-  publications: `Recent Publications`,
+  publications: `Recent Research`,
   publicationsList: [{
     date: ' Advances in Political Psychology 2022',
     title: 'The Role of Race in Political Attitudes among the Non-Religious',
@@ -12,6 +12,11 @@ export const HOME = {
   },
   {
     date: 'Working Papers',
-    title: 'Racial Grievances and Black Political Behavior',
-  }]
+    title: 'Black Racial Grievance and Black American Identity',
+  },
+  {
+    date: 'Working Papers',
+    title: 'Operationalizing Black Racial Grievance for Political Behavior',
+  }
+  ]
 }

@@ -1,4 +1,4 @@
 export * from './home';
-export * from './publications';
+export * from './research';
 export * from './about';
 export * from './teaching';
