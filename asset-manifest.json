@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/static/css/main.e0b47d14.css",
-    "main.js": "/static/js/main.f77da42d.js",
+    "main.js": "/static/js/main.4627bce6.js",
     "static/js/787.b6e71b59.chunk.js": "/static/js/787.b6e71b59.chunk.js",
     "static/media/headshot.jpg": "/static/media/headshot.93b5936bc41a439af7b6.jpg",
     "static/media/logo.svg": "/static/media/logo.e8b471df6bdd2e4d4a3a3b22dfae0aa2.svg",
     "static/media/icon-arrow-right.svg": "/static/media/icon-arrow-right.bde584cfe58634323bfb.svg",
+    "index.html": "/index.html",
     "static/media/icon-social-github-hover.svg": "/static/media/icon-social-github-hover.2cbc8a0d7bc83d9265dc.svg",
     "static/media/icon-social-github.svg": "/static/media/icon-social-github.375467b0b075c61551b7.svg",
-    "index.html": "/index.html",
     "static/media/icon-social-linkedin-hover.svg": "/static/media/icon-social-linkedin-hover.9dc83e4d657c34c38ea1.svg",
     "static/media/icon-social-linkedin.svg": "/static/media/icon-social-linkedin.0c33c5fee99f9ad527ed.svg",
     "static/media/icon-social-twitter-hover.svg": "/static/media/icon-social-twitter-hover.b04a4f27a5b7c8747ce7.svg",
     "static/media/icon-social-twitter.svg": "/static/media/icon-social-twitter.3b3726c05177be7b0b70.svg",
     "main.e0b47d14.css.map": "/static/css/main.e0b47d14.css.map",
-    "main.f77da42d.js.map": "/static/js/main.f77da42d.js.map",
+    "main.4627bce6.js.map": "/static/js/main.4627bce6.js.map",
     "787.b6e71b59.chunk.js.map": "/static/js/787.b6e71b59.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e0b47d14.css",
-    "static/js/main.f77da42d.js"
+    "static/js/main.4627bce6.js"
   ]
 }
