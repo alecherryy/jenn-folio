@@ -2,12 +2,12 @@ import './styles.scss';
 
 const COMMITTEE = [
   {
-    name: 'Lilliana Mason',
-    website: 'https://snfagora.jhu.edu/person/lilliana-mason/',
-  },
-  {
     name: 'Chryl Laird',
     website: 'https://www.chryllaird.com/',
+  },
+  {
+    name: 'Lilliana Mason',
+    website: 'https://snfagora.jhu.edu/person/lilliana-mason/',
   },
   {
     name: 'Antoine Banks',
