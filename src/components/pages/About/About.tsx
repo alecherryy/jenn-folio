@@ -12,29 +12,29 @@ export const About = () => {
   return (
     <div className="p-about">
       <Split>
-        <div className="p-about__left"></div>
-        <Fade duration={1000} direction="right">
-          <Content>
-            <div className="p-about__inner">
-              <Title singleChar="A" title="bout" />
-            </div>
-            <div className="p-about__inner">
-              <div className="p-about__text">
-                <p className="u-txt-black">{ABOUT.intro}</p>
-                <p className="u-txt-black">{ABOUT.text}</p>
-                <p className="u-txt-black">{ABOUT.text_2}</p>
+        <div className="p-about__left" />
+        <div className="p-about__right">
+          <Fade duration={1000} direction="right">
+            <Content>
+              <div className="p-about__inner">
+                <div className="p-about__text">
+                  <Title singleChar="A" title="bout" />
+                  <Advisors />
+                  <Committee />
+                  <DownloadCV modifierClasses="u-mt-3" />
+                </div>
+                <div className="p-about__text">
+                  <p className="u-txt-black">{ABOUT.intro}</p>
+                  <p className="u-txt-black">{ABOUT.text}</p>
+                  <p className="u-txt-black">{ABOUT.text_2}</p>
+                  <p className="u-txt-black">{ABOUT.text_3}</p>
+                  <p className="u-txt-black">{ABOUT.contact}</p>
+                </div>
               </div>
-              <div className="p-about__text">
-                <p className="u-txt-black">{ABOUT.text_3}</p>
-                <p className="u-txt-black">{ABOUT.contact}</p>
-                <Advisors />
-                <Committee />
-                <DownloadCV modifierClasses="u-mt-3" />
-              </div>
-            </div>
-          </Content>
-        </Fade>
+            </Content>
+          </Fade>
+        </div>
       </Split>
-    </div>
+    </div >
   )
 }

@@ -1,7 +1,7 @@
 import './styles.scss';
 import { useEffect, useState } from "react";
 import { Link } from 'types';
-import { Menu, MobileMenu } from 'components/core';
+import { Lines, Menu, MobileMenu } from 'components/core';
 const MENU_ITEMS: Link[] = [
   {
     text: 'Home',
@@ -52,6 +52,7 @@ export const Header = () => {
 
   return (
     <header className="l-header">
+      <Lines />
       {isMobile ? (
         <MobileMenu items={MENU_ITEMS} />
       ) : (
