@@ -1,13 +1,13 @@
 import './styles.scss';
 import { Fade } from "react-awesome-reveal"
 import { Split } from "../../layouts/Split/Split"
-import { PUBLICATIONS } from 'wording';
 import { Content, PapersGrid, Title } from 'components/core';
+import { RESEARCH } from 'wording';
 
 /**
- * Publications page
+ * Research page
  */
-export const Publications = () => {
+export const Research = () => {
 
   return (
     <div className="p-publications">
@@ -16,7 +16,7 @@ export const Publications = () => {
         <Fade duration={1000} direction="right">
           <Content>
             <Title singleChar="P" title="ublications" />
-            <PapersGrid decorated title={PUBLICATIONS.journals} cols={3} content={PUBLICATIONS.publicationsList} />
+            <PapersGrid decorated title={RESEARCH.journals} cols={3} content={RESEARCH.publicationsList} />
             {/* <PapersGrid title={PUBLICATIONS.chapters} cols={3} content={PUBLICATIONS.chaptersList} /> */}
           </Content>
         </Fade>

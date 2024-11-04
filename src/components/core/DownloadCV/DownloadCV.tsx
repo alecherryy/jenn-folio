@@ -1,19 +1,23 @@
-import './styles.scss';
+import "./styles.scss";
 
 type Props = {
-  modifierClasses?: string,
+  modifierClasses?: string;
   isMobile?: boolean;
-}
-export const DownloadCV = ({ isMobile, modifierClasses = '' }: Props) => {
+};
+export const DownloadCV = ({ isMobile, modifierClasses = "" }: Props) => {
   const classes = [
-    'c-download-cv',
-    'u-button u-button--text',
-    isMobile === true ? 'u-hidden-desktop-up' : '',
-    isMobile === false ? 'u-hidden-desktop-down' : '',
+    "c-download-cv",
+    "u-button u-button--text",
+    isMobile === true ? "u-hidden-desktop-up" : "",
+    isMobile === false ? "u-hidden-desktop-down" : "",
     modifierClasses,
-  ].join(' ').trim();
+  ]
+    .join(" ")
+    .trim();
 
   return (
-    <a className={classes} href="./files/CV - St Sume, Jé.pdf" download>Download CV</a>
-  )
-}
+    <a className={classes} href="./files/St Sume, Jé - CV.pdf" download>
+      Download CV
+    </a>
+  );
+};

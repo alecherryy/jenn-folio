@@ -20,11 +20,7 @@
     flex-direction: row;
     justify-content: space-between;
     height: 100vh;
-    padding: $spacing-9;
-  }
-
-  @include bp-desktop-lg {
-    padding: $spacing-9;
+    padding: calc($spacing-9 * 2) $spacing-9;
   }
 }
 

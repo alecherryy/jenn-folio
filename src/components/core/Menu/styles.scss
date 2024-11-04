@@ -19,10 +19,6 @@
 .c-menu__item {
   margin: 0;
 
-  &:first-child {
-    display: none;
-  }
-
   &:last-child {
     margin-left: $spacing-2;
 

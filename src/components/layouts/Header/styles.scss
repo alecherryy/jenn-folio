@@ -6,11 +6,13 @@
 
 .l-header {
   align-items: center;
+  background-color: $white;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   left: 0;
   padding: $spacing-3 $spacing-2 0;
   position: fixed;
+  overflow: hidden;
   top: 0;
   width: 100%;
   z-index: 2;
@@ -18,5 +20,9 @@
   @include bp-tablet-lg {
     padding-left: $spacing-3;
     padding-right: $spacing-3;
+  }
+
+  .c-lines__line {
+    position: absolute;
   }
 }
